@@ -35,7 +35,7 @@ class Game
   end
 
   def fire
-    @fires << Fire.new(@player.x, @player.y)
+    @fires << Fire.new(@player)
   end
 
   def update_fires

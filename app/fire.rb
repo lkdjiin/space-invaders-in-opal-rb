@@ -1,17 +1,17 @@
 class Fire
-  WIDTH = 4
+  SIDE = 4
   DELTA = 5
 
   attr_reader :x, :y
 
-  def initialize(x, y)
-    @x = x
-    @y = y
+  def initialize(player)
+    @x = player.x + player.w / 2
+    @y = player.y - SIDE
   end
 
-  def w; WIDTH; end
+  def w; SIDE; end
 
-  def h; WIDTH; end
+  def h; SIDE; end
 
   def color; "white"; end
 
